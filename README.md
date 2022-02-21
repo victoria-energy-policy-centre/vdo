@@ -1,20 +1,16 @@
+# VDO
+VDO stands for the Victorian Default Offer. This folder contains the analysis and writing for a discussion paper on the influence the VDO has had on retail prices since its inception. The working title is 'What is the purpose of the VDO?'.
 
-# Scholarly HTML Community Group repository
+## Source data sets
+- Offers data showing the history of Citipower flat rate offers for each retailer. The original data is from https://compare.energy.vic.gov.au/.
+- VDO history of flat rate offers
+- Market share of retailers in Victoria to be able to select the most popular retailers.
+- Publication dates of the VDO
 
-[![Join the chat at https://gitter.im/w3c/scholarly-html](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/w3c/scholarly-html?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+## Visualisations
 
-This is the repository of the
-[Scholarly HTML Community Group](https://www.w3.org/community/scholarlyhtml/).
+## Contributing
+Ben Willey. The folder is version controlled by Git. 
 
-Additional links:
-
-* [Contact This Group](mailto:public-scholarlyhtml@w3.org)
-* [Mailing list archive](https://lists.w3.org/Archives/Public/public-scholarlyhtml/)
-* [Join the group](https://www.w3.org/community/scholarlyhtml/join)
-
-A browser friendly reading of the specifications in this repository is possible through
-[github.io](https://w3c.github.io/scholarly-html/).
-
-If you are member of that Community Group and you want to be added as a possible direct contributor
-to this repository, please contact Robin Berjon (robin@berjon.com) or Ivan Herman (ivan@w3.org),
-providing them with your github handle.
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
