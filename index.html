@@ -206,6 +206,32 @@
           <a href="http://rawgit.com/w3c/aria/master/aria/dpub.html">March DPUB-ARIA draft</a>
         </p>
       </section>
+      <section id="questions">
+        <h3>Questions</h3>
+        <p>
+          The only validation requirement for Scholarly HTML at this point is that the HTML is valid.
+          We are considering building a a validation tool in RelaxNG or JavaScript to check compliance
+          with this set of rules.
+        </p>
+        <p>
+          Articles should be in the following basic structure:
+        </p>
+        <ul>
+          <li>heading with article title</li>
+          <li>0+ hunks</li>
+          <li>
+            0+ sections
+            <ul>
+              <li>0+ headings</li>
+              <li>0+ hunks</li>
+              <li>0+ sections</li>
+            </ul>
+          </li>
+        </ul>
+        <p>
+          It must feature a <code>DOCTYPE</code> as its preamble.
+        </p>
+      </section>
       <section id="data">
         <h3>Data</h3>
         <p>
@@ -278,9 +304,8 @@
         <a role="doc-biblioref">schema.org</a>, complemented by a small number of additions from
         the <a href="#scholarly-article">Scholarly Article Vocabulary</a>.
       </p>
-      <section id="person-org">
-        <!-- review? -->
-        <h3>Persons &amp; Organizations</h3>
+      <section id="fair">
+        <h3>A Fair Deal for Consumers?</h3>
         <p>
           Marking up persons and organizations can make use of any applicable properties in
           <a>schema:Person</a> and <a>schema:Organization</a>, respectively, but it is worth
@@ -354,21 +379,15 @@
           <code>meta</code> (which is acceptable).
         </p>
       </section>
-      <section id="typing-sections">
+      <section id="structure">
         <!-- review? -->
-        <h3>Typing Sections</h3>
+        <h3>The Structure of the Market</h3>
         <p>
           XXX
         </p>
       </section>
-      <section id="roles">
-        <!-- review? -->
-        <h3>Schema Roles</h3>
-        <!--
-          XXX needs rewrite, Dave doesn’t understand, ergo no one will
-          DC suggests contrasting two examples: one in which I am eternally indentured to the
-          Illuminati, versus one in which I am just a hired gun.
-        -->
+      <section id="practices">
+        <h3>The Practices of the Market</h3>
         <p>
           It is worth taking a step back to understand the importance of the <em>role</em>
           modeling. Its application is clearly exemplified in the <a href="#authors">Authors &amp;
@@ -1017,7 +1036,7 @@ XXX this example has issues
       </section>
     </section>
     <section id="conclusions">
-      <h2>Conclusions</h2>
+      <h2>Conclusions and Further Research</h2>
       <p>
         A limited number of classes and properties are currently not available from
         <a role="doc-biblioref">schema.org</a>. In most if not all cases it would be desirable to
