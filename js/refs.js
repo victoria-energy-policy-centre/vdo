@@ -21,7 +21,7 @@ let refs = {
   </dd>
   `,
   
-  'Retail Energy Review: `
+  'Retail Energy Review': `
   <dd property="schema:citation" typeof="schema:WebPage"
       resource="https://www.energy.vic.gov.au/about-energy/policy-and-strategy">
     <cite property="schema:name"><a href="https://www.energy.vic.gov.au/about-energy/policy-and-strategy">Independent Review into the Electricity and Gas Retail Markets in Victoria</a></cite>.
