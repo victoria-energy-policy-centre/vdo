@@ -267,65 +267,59 @@
       <section id="practices">
         <h3>The Practices of the Market</h3>
         <p>
-          It is worth taking a step back to understand the importance of the <em>role</em>
-          modeling. Its application is clearly exemplified in the <a href="#authors">Authors &amp;
-          Contributors</a> section wherein a <a>sa:ContributorRole</a> type is used as a wrapper
-          and not <a>schema:Person</a> or <a>schema:Organization</a> directly.
+          The Thwaites review noted the complexity of the electricity retail market and that customers find the landscape of the market difficult to navigate and have introduced many measures, such as simplification of billing documentation, that have likely improved customer comprehensive of the market place. 
+          Also it is stated:
+        </p>
+        <p class="issue">
+          <i>The best offers in the market are only achieved by active consumers who switch regularly and remain engaged.</i>
         </p>
         <p>
-          Roles are an indirection that provides additional information about a property or
-          relationship. A simple overview is provided in the schema.org blog post
-          <a href="http://blog.schema.org/2014/06/introducing-role.html">Introducing ’Role’</a>.
+          We examine whether both parts of this statement are true since the introduction of the VDO. 
+          One may argue that achieving a significant saving in comparison to the VDO requires significant engagement in the market. 
+          It is true that to achieve these savings requires interaction with the market (for example, to request the cheapest market offer that a particular retailer offers) but no knowledge of the different prices that retailers offer is required. 
+        </p>
+        <p>
+          To demonstrate this, we compare the yearly cost (over the period from 1 July 2019 to 30 June 2021) for a reluctant residential customer consuming 4MWh of energy per year on the VDO with a reluctant customer who, over the same period:
+        </p>
+        <ul>
+          <li>
+            Selects a retailer randomly from a group of retailers every 6 months.
+          </li>
+          <li>
+            Asks for the cheapest flat rate market deal with that retailer.
+          </li>
+        </ul>
+        <p>
+          The point of this approach is to demonstrate that no price comparison is required and the (reluctant) customer also does not need to request a complicated offer structure.
+        </p>
+        <p>
+          We have grouped the retailers according to market share and excluded some that either did not exist during the period in question, or had unorthodox pricing structures that would not be appealing to a customer looking to minimize their engagement with the market. 
+          Following the classifications that the ESC use in the annual Victorian Energy Market Report, we define a large retailer to be one with at least 5% market share and a medium retailer as one with a market share between 1% and 5%. 
+          We make the additional definition of a main retailer as a large or medium retailer. 
+          For each day in our offers data set we found the retailer offering the cheapest flat rate deal. 
+          The retailers occurring most frequently in this analysis are known as the cheap retailers.
+        </p>
+        <p>
+          The yearly cost on the VDO for this period was $X. 
+          The following box and whisker diagrams plot the distributions of 50 reluctant customers following the alternative strategy outlined, for each of the four retailer groups we have defined.
         </p>
         
          '<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="random_customer.html" height="525" width="100%"></iframe>'
         
         <p>
-          Let’s look at the example of authorship information. Some properties of the agent who
-          authored the document (person or organization), such as their name, are considered to be
-          true outside the limited context of the document. These properties will be set directly on
-          the agent.
+          We can see that even the most unlucky reluctant customer following the alternative strategy and only wishing to deal with the large retailers outperforms the VDO by over $50 per year. 
+          A typical (median) reluctant customer open to dealing with only the large retailers outperforms the VDO by $106 over the year. 
+          If such a customer is willing to consider dealing only with medium sized retailers they would typically have saved $139 over the year.
         </p>
         <p>
-          On the other hand, other properties are considered to be specific to the agent
-          <em>in their role as author of the document</em>. To give an example, were I to be
-          writing the document you are currently reading as a freelancer for the Illuminati, my
-          affiliation to them would be solely in my role as author and I should not be considered
-          eternally indentured to them.
+          It may indeed be the case that:
+        </p>
+        <p class="issue">
+          <i>...active consumers who do their research on energy purchasing options may never secure the best price</i>
         </p>
         <p>
-          When a role is used to enrich a property, the convention is to have it as the value of
-          that property, and then to repeat the property on the role to point to the object. At
-          first glance it sounds contrived, but it is a simple and powerful construct. To stay with
-          the authoring example, the indirection would look like:
+          However, it requires minimal interaction with the market to perform quite well, an example of the Pareto principle.
         </p>
-        <p>
-          To demonstrate how properties can attach differently to the role and to the agent, we can
-          unfold the authorship example further:
-        </p>
-        <figure typeof="schema:SoftwareSourceCode" resource="#role-example" id="role-example">
-          <pre>
-<a>schema:ScholarlyArticle</a>
-└─<a>schema:author</a>
-  └─<a>sa:ContributorRole</a>
-    ├─<a>schema:author</a>
-    │ └─<a>schema:Person</a>
-    │   ├─<a>schema:name</a> = Bruce Banner
-    │   └─<a>schema:url</a> = http://berjon.com/
-    └─<a>sa:roleAffiliation</a>
-      └─<a>schema:Organization</a>
-        ├─<a>schema:name</a> = Illuminati
-        └─<a>schema:address</a> = Bavaria
-          </pre>
-          <figcaption>
-            <span property="schema:name"></span>
-            <span property="schema:description">
-              Example of a role being used to model authorship. This effectively states that my
-              affiliation <em>as a contributor</em> is to the Illuminati and that my name
-              <em>as a person</em> is Bruce Banner.
-            </span>
-          </figcaption>
-        </figure>
       </section>
     </section>
       
